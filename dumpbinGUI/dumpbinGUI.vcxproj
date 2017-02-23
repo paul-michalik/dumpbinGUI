@@ -41,13 +41,13 @@
     <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)..\bin\$(ProjectName).$(PlatformShortName).$(PlatformToolset).$(Configuration)</OutDir>
-    <IntDir>$(SolutionDir)..\tmp\$(ProjectName).$(PlatformShortName).$(PlatformToolset).$(Configuration)</IntDir>
+    <OutDir>$(SolutionDir)products\bin\$(ProjectName).$(PlatformShortName).$(PlatformToolset).$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)products\tmp\$(ProjectName).$(PlatformShortName).$(PlatformToolset).$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)..\bin\$(ProjectName).$(PlatformShortName).$(PlatformToolset).$(Configuration)</OutDir>
-    <IntDir>$(SolutionDir)..\tmp\$(ProjectName).$(PlatformShortName).$(PlatformToolset).$(Configuration)</IntDir>
+    <OutDir>$(SolutionDir)products\bin\$(ProjectName).$(PlatformShortName).$(PlatformToolset).$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)products\tmp\$(ProjectName).$(PlatformShortName).$(PlatformToolset).$(Configuration)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -66,10 +66,8 @@
     <Link>
       <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>..\..\bin\debug/dumpbinGUI.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ProgramDatabaseFile>.\Debug/dumpbinGUI.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
     </Link>
     <Midl>
@@ -93,17 +91,13 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
-      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
-      <BrowseInformation>true</BrowseInformation>
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
     </ClCompile>
     <Link>
       <AdditionalOptions>/MACHINE:I386 %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>odbc32.lib;odbccp32.lib;comctl32.lib;gdi32.lib;comdlg32.lib;winspool.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>..\..\bin\Release/dumpbinGUI.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <ProgramDatabaseFile>.\Release/dumpbinGUI.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
     </Link>
     <Midl>
