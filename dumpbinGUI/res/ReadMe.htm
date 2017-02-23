@@ -1,0 +1,109 @@
+<html>
+	<head>
+		<title>dumpbinGUI ReadMe</title>
+		<style> body { font-family: "Courier New"; font-size: x-small; }
+	</style>
+	</head>
+	<body>
+		<center><h3>dumpbinGUI ReadMe<br>
+				<font size="-1">November 8, 2003<br>
+					<a href="mailto:tltabor@nyc.rr.com&amp;subject=dumpbinGUI">Tim Tabor</a></font></h3>
+		</center>
+		<p><b>dumpbinGUI</b>
+		is a GUI version of Microsoft's dumpbin command-line tool. Like its 
+		command-line cousin, dumpbinGUI invokes link.exe with the /DUMP option, and 
+		various other options specified at runtime.
+		<p><b>dumpbinCMH</b>
+		is a context menu handler shell extension that invokes dumpbinGUI for 
+		associated file types.
+		<p><b>Both modules require Microsoft Internet Explorer 4.0 or later.</b>
+			<h3>dumpbinGUI</h3>
+			You can start dumpbinGUI from the command line, or from the Start menu, or from 
+			dumpbinCMH. If you start dumpbinGUI from the command line, you can specify 
+			additional arguments <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vccore98/html/_core_dumpbin_command_line.asp">
+				documented</a>
+		for dumpbin.
+		<p>Once dumpbinGUI is started, you can load binary files by selecting them in the <nobr>
+				<b>File | Open</b></nobr> dialog, or by dragging them from the Shell 
+			(Windows Explorer, the Desktop, etc.). All of dumpbin's flags can be selected 
+			from dumpbinGUI's <b>View</b>
+		menu.
+		<p>Like dumpbin, dumpbinGUI must find MSVC's <b>link.exe</b> tool at runtime. 
+			Unlike dumpbin, dumpbinGUI will search the paths defined within MSVC in 
+			addition to the PATH defined in the environment. If you nevertheless see a 
+			linkage error, you might have to add the directory of the indicated file to 
+			your PATH. Please <a href="mailto:tltabor@nyc.rr.com&amp;subject=dumpbinGUI">report 
+				any such problems to me</a>
+		, so I can refine the search algorithm.
+		<p>Please note, as documented in <a href="http://support.microsoft.com/support/kb/articles/Q145/9/37.asp">
+				Q145937</a>
+		, the command line version of dumpbin fails on long filenames with spaces. This 
+		problem has been fixed in dumpbinGUI.
+		<p>The following MSDN pages have helpful information about dumpbin.
+			<ul>
+				<a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vccore98/html/_core_dumpbin_command_line.asp">
+					DUMPBIN Command Line</a>
+				<br>
+				<a href="http://msdn.microsoft.com/library/en-us/vccore98/HTML/_core_dumpbin_options.asp">
+					DUMPBIN Options</a>
+				<br>
+				<a href="http://support.microsoft.com/support/kb/articles/Q177/4/29.ASP">INFO: 
+					Examples of DUMPBIN Output </a>
+				<br>
+				<a href="http://www.microsoft.com/hwdev/hardware/PECOFF.htm">Microsoft Portable 
+					Executable and Common Object File Format Specification</a>
+			</ul>
+			<ul>
+				<a href="http://support.microsoft.com/support/kb/articles/Q164/1/51.asp">HOWTO: 
+					Comparing Binary Images of Same Project Builds</a>
+				<br>
+				<a href="http://support.microsoft.com/support/kb/articles/Q131/3/13.asp">HOWTO: 
+					Create 32-bit Import Libraries Without .OBJs or Source</a>
+				<br>
+				<a href="http://support.microsoft.com/support/kb/articles/Q143/0/72.asp">HOWTO: 
+					Determine Default Libraries for an .OBJ Object File</a>
+				<br>
+				<a href="http://support.microsoft.com/support/kb/articles/q140/5/84.asp">HOWTO: 
+					Link with the Correct C Run-Time (CRT) Library</a>
+				<br>
+				<a href="http://support.microsoft.com/support/kb/articles/Q135/3/38.asp">HOWTO: 
+					View Exported Functions in a DLL</a>
+				<br>
+				<a href="http://support.microsoft.com/support/kb/articles/Q182/0/46.ASP">HOWTO: 
+					Work Around Bugs in Template Libraries</a>
+				<br>
+				<a href="http://support.microsoft.com/support/kb/articles/Q101/1/87.asp">Interpreting 
+					Executable Base Addresses</a>
+				<br>
+				<a href="http://support.microsoft.com/support/kb/articles/Q170/1/71.ASP">PRB: 
+					DUMPBIN Displays Cumulative Data for Multiple Arguments</a>
+				<br>
+				<a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vcug98/html/vchowusingcoff-formatinformationordllexports.asp">
+					Using COFF-Format Information or DLL Exports</a>
+				<br>
+				<a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/vccore98/HTML/_core_using_dumpbin_to_view_decorated_names.asp">
+					Using DUMPBIN to View Decorated Names</a>
+			</ul>
+			<h3>dumpbinCMH</h3>
+			The context menu handler is initially registered for .exe, .dll, .ocx, .lib, 
+			and .obj files. Simply right-click one of these files from the Shell, and 
+			select <b>dumpbinGUI</b>
+		from the context menu.
+		<p>You can select <b>Associate</b> from the context menu to change the file types 
+			associated with dumpbinCMH.
+			<h3>License</h3>
+			Copyright© 2001-2003 Tim Tabor. All rights reserved. No warrantees extended.
+			<h3>Resources</h3>
+		<p>At the time of this writing, current binaries and sources can be downloaded from <a href="http://www.cheztabor.com/dumpbinGUI">
+				http://www.cheztabor.com/dumpbinGUI</a>
+		.
+		<p>Please <a href="mailto:tltabor@nyc.rr.com&amp;subject=dumpbinGUI">e-mail</a>
+		bug reports and feature requests to me.
+		<p>
+		Enjoy.
+		<p>
+		//timtabor
+		<p>
+		<p></p>
+	</body>
+</html>

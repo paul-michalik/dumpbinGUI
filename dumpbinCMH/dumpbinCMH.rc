@@ -1,0 +1,272 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,0,1
+ PRODUCTVERSION 1,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "timtabor"
+            VALUE "FileDescription", "dumpbinCMH Context Menu Shell Extension Handler for dumpbinGUI"
+            VALUE "FileVersion", "1, 1, 0, 1"
+            VALUE "InternalName", "dumpbinCMH"
+            VALUE "LegalCopyright", "Copyright© 2001-2003 timtabor"
+            VALUE "OriginalFilename", "dumpbinCMH.dll"
+            VALUE "ProductName", "dumpbinCMH"
+            VALUE "ProductVersion", "1, 1, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU 
+BEGIN
+    POPUP ""
+    BEGIN
+        POPUP "dumpbinGUI"
+        BEGIN
+            MENUITEM "ALL",                         ID_ALL
+            MENUITEM "SUMMARY",                     ID_SUMMARY
+            MENUITEM SEPARATOR
+            MENUITEM "ARCH",                        ID_ARCH
+            MENUITEM "ARCHIVEMEMBERS",              ID_ARCHIVEMEMBERS
+            MENUITEM "DEPENDENTS",                  ID_DEPENDENTS
+            MENUITEM "DIRECTIVES",                  ID_DIRECTIVES
+            MENUITEM "DISASM",                      ID_DISASM
+            MENUITEM "EXPORTS",                     ID_EXPORTS
+            MENUITEM "FPO",                         ID_FPO
+            MENUITEM "HEADERS",                     ID_HEADERS
+            MENUITEM "IMPORTS",                     ID_IMPORTS
+            MENUITEM "LINENUMBERS",                 ID_LINENUMBERS
+            MENUITEM "LINKERMEMBER",                ID_LINKERMEMBER
+            MENUITEM "PDATA",                       ID_PDATA
+            MENUITEM "RAWDATA",                     ID_RAWDATA
+            MENUITEM "RELOCATIONS",                 ID_RELOCATIONS
+            MENUITEM "SYMBOLS",                     ID_SYMBOLS
+            MENUITEM SEPARATOR
+            MENUITEM "Associate...",                ID_ASSOCIATE
+            MENUITEM SEPARATOR
+            MENUITEM "ReadMe",                      ID_README
+            MENUITEM "About dumpbinCMH",            ID_ABOUT
+        END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ASSOCIATE DIALOGEX 0, 0, 232, 129
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Associate"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT,100,40,56,12,ES_AUTOHSCROLL
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,6,63,150,58
+    DEFPUSHBUTTON   "OK",IDOK,171,8,50,14
+    PUSHBUTTON      "Add",IDC_ADD,171,39,50,14
+    PUSHBUTTON      "Remove",IDC_REMOVE,171,63,50,14
+    CTEXT           "Use this dialog to modify the file type associations for this shell extension.",
+                    IDC_STATIC,6,8,150,18,SS_SUNKEN
+    LTEXT           "File Extension or File Class",IDC_STATIC,6,42,89,10
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 186, 106
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About dumpbinCMH"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",1,129,7,50,14
+    CTEXT           "dumpbinCMH",IDC_STATIC,32,10,70,8
+    CTEXT           "copyright (c) 2001-2003 tim tabor",IDC_STATIC,6,42,119,
+                    8
+    CTEXT           "all rights reserved",IDC_STATIC,7,51,117,8
+    CTEXT           "no warranties extended",IDC_STATIC,6,60,119,8
+    LTEXT           "Version 1.1.0.1",IDC_STATIC,43,26,48,8
+    CTEXT           "www.cheztabor.com/dumpbinGUI",IDC_MAILTO,5,75,125,11,
+                    SS_NOTIFY | SS_CENTERIMAGE
+    CTEXT           "tltabor@nyc.rr.com",IDC_MAILTO2,5,86,125,11,SS_NOTIFY | 
+                    SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ASSOCIATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 225
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_DLL                 ICON                    "res\\dll.ico"
+IDI_HOURGLASS           ICON                    "res\\hourglass.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "dumpbinCMH"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SUMMARY              "SUMMARY;Display minimal information about sections"
+    ID_ALL                  "ALL;Display everything"
+    ID_ARCH                 "ARCH;Display architecture section"
+    ID_ARCHIVEMEMBERS       "ARCHIVEMEMBERS;Display minimal information about member objects in a library"
+    ID_DEPENDENTS           "DEPENDENTS;Display module names of imported functions"
+    ID_DIRECTIVES           "DIRECTIVES;Dump compiler-generated .directive section"
+    ID_DISASM               "DISASM;Display disassembly of code sections"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FPO                  "FPO;Display frame pointer optimization records"
+    ID_HEADERS              "HEADERS;Display file header, optional header, and section headers"
+    ID_IMPORTS              "IMPORTS;Display definitions imported from other modules"
+    ID_LINENUMBERS          "LINENUMBERS;Display COFF line numbers"
+    ID_LINKERMEMBER         "LINKERMEMBER;Display public symbols defined in a library"
+    ID_PDATA                "PDATA;Dump execution tables"
+    ID_RAWDATA              "RAWDATA;Dump raw content of each section"
+    ID_RELOCATIONS          "RELOCATIONS;Display any relocations"
+    ID_SYMBOLS              "SYMBOLS;Display COFF symbol tables"
+    ID_EXPORTS              "EXPORTS;Display exported definitions"
+    ID_MYHELP               "HELP;Display dumpbinCMH help"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ASSOCIATE            "ASSOCIATE;Associate file types with dumpbinCMH"
+    ID_ABOUT                "ABOUT;Display program information, version information, and copyright."
+    ID_README               "README;Display ReadMe.htm in Internet Explorer"
+    ID_BUTTON32808          "Open a binary file\nOpen"
+    ID_BUTTON32809          "Save the view\nSave"
+    ID_BUTTON32813          "Copy the selection and put it on the Clipboard\nCopy"
+    ID_BUTTON32815          "Print the view\nPrint"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_BUTTON32816          "Display program information, version number and copyright\nAbout"
+    ID_BUTTON32817          "Find text in the view\nFind"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,43 @@
+import "C:\Program Files\Microsoft Visual Studio .NET\Vc7\PlatformSDK\include\prsht.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET\Vc7\PlatformSDK\include\mshtml.idl";
+import "c:\program files\microsoft visual studio .net\vc7\platformsdk\include\dimm.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET\Vc7\PlatformSDK\include\mshtmhst.idl";
+import "c:\program files\microsoft visual studio .net\vc7\platformsdk\include\docobj.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET\Vc7\PlatformSDK\include\exdisp.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET\Vc7\PlatformSDK\include\objsafe.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET\Vc7\PlatformSDK\include\shldisp.idl";
+import "C:\Program Files\Microsoft Visual Studio .NET\Vc7\PlatformSDK\include\shobjidl.idl";
+import "c:\program files\microsoft visual studio .net\vc7\platformsdk\include\prsht.idl";
+
+[
+	object,
+	uuid(13447646-25E9-40cb-921B-967999167CD5),
+	oleautomation,
+	helpstring("IRegDialog Interface"),
+	pointer_default(unique)
+] 
+#line 19 "e:\\projectsatl\\dumpbingui\\source\\dumpbincmh\\ContextMenu.h"
+interface IRegDialog : IUnknown {
+#line 21 "e:\\projectsatl\\dumpbingui\\source\\dumpbincmh\\ContextMenu.h"
+	[id(1),helpstring("method ShowDialog")] HRESULT  ShowDialog();
+};
+
+
+[ version(1.0), uuid(450972BC-C312-416E-8319-A55D0E742B82), helpstring("dumpbinCMH 1.0 Type Library") ]
+library dumpbinCMH
+{
+	importlib("stdole2.tlb");
+	importlib("olepro32.dll");
+
+	[
+		version(1.0),
+		uuid(8F697706-E1B2-4BF7-8C64-89904C409DE6),
+		helpstring("ContextMenu Class")
+	] 
+#line 36 "e:\\projectsatl\\dumpbingui\\source\\dumpbincmh\\ContextMenu.h"
+	coclass CContextMenu {
+		interface IRegDialog;
+	};
+
+}
+
