@@ -83,4 +83,7 @@
   <ItemGroup>
     <Text Include="notes.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="dumpbinGUI.bat" />
+  </ItemGroup>
 </Project>
